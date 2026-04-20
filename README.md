@@ -1,39 +1,90 @@
-# Pragmatic PM AI Skills 🧠💼
+﻿# Pragmatic PM AI Skills
 
-> **"AI loves to give you 'good student' answers that fail in the real world. This repository fixes that."**
+Pragmatic behavioral guidelines for AI assistants used by product managers, IT professionals, and career-focused operators.
 
-This project is a fork of the philosophy behind [Andrej Karpathy's AI Skills](https://github.com/forrestchang/andrej-karpathy-skills), but adapted for **Product Managers, IT Professionals, and Career-driven individuals.**
+Inspired by the structure of [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills), but focused on non-coding PM and career execution in real organizational environments.
 
 ## The Problem
-Most AI models (Claude, ChatGPT) are trained on millions of SEO-optimized articles and corporate blogs. When you ask them for career or product advice, they give you **"Cargo Cult"** suggestions:
-- *"Write long case studies on LinkedIn"* (Recruiters don't read them).
-- *"Create complex frameworks for simple features"* (Developers hate them).
-- *"Prioritize based on 'value' without defining whose value"* (Stakeholders ignore them).
+
+Generic AI advice often sounds polished but fails in practice:
+- Long outputs nobody reads.
+- Frameworks without decision leverage.
+- "Best practices" that ignore incentives, politics, and time constraints.
 
 ## The Solution
-This repository provides a `PM.md` configuration file that forces the AI to use **First Principles**, **Human Psychology**, and **Friction Analysis**.
 
----
+This repository ships a reusable instruction set that makes AI:
+- audit incentives before proposing work;
+- reduce friction instead of adding process;
+- prioritize hard signals over narrative noise;
+- define real-world verification criteria.
 
-## 🚀 How to use
+The core content is in:
+- [`PM.md`](./PM.md) for chat grounding.
+- [`CLAUDE.md`](./CLAUDE.md) for project-level instruction files.
+- [`skills/karpathy-guidelines/SKILL.md`](./skills/karpathy-guidelines/SKILL.md) for plugin compatibility with the source layout.
+- [`skills/pragmatic-pm-guidelines/SKILL.md`](./skills/pragmatic-pm-guidelines/SKILL.md) as a project-named variant.
 
-### Option A: Per-Session (The "Grounding" Prompt)
-Copy the contents of [PM.md](./PM.md) and paste it as your first message to any AI (Claude, ChatGPT, etc.) with the instruction: 
-> *"Follow these principles for all our future interactions in this chat."*
+English | [简体中文](./README.zh.md)
 
-### Option B: Project-Based
-If you use tools like **Claude Code** or **Cursor**, add `PM.md` (or `CLAUDE.md`) to your project root to ensure the AI stays pragmatic while helping you write specs, docs, or career materials.
+## Core Principles
 
----
-
-## 💎 Core Principles
-
-| Principle | Addresses |
+| Principle | What it prevents |
 |---|---|
-| **Intent-First Discovery** | Stops AI from guessing. Forces an audit of "Who is the human on the other side and what do they want?" |
-| **Friction Reduction** | Prevents "bloat." If a 5-word signal works better than a 500-word essay, we use the 5 words. |
-| **Signal-to-Noise Ratio** | Focuses on "Hard Signals" (Brands, Numbers, Results) instead of corporate "fluff" and "best practices." |
-| **Verification by Reality** | Measures success by changes in human behavior (e.g., getting a response), not just by generating text. |
+| **Intent-First Discovery** | Silent assumptions about what people want |
+| **Friction Reduction and MVP** | Process bloat and overbuilt artifacts |
+| **Signal-to-Noise Ratio** | Soft storytelling without decision signals |
+| **Evidence-Based Outcomes** | "Looks good" outputs with no behavioral impact |
+
+## Install
+
+Option A: Claude Code plugin (recommended)
+
+```text
+/plugin marketplace add vltnbrain/pragmatic-pm-ai-skills
+/plugin install pragmatic-pm-ai-skills@pragmatic-pm-skills
+```
+
+Option B: Per-project instruction file
+
+```bash
+curl -o CLAUDE.md https://raw.githubusercontent.com/vltnbrain/pragmatic-pm-ai-skills/main/CLAUDE.md
+```
+
+Option C: Manual grounding in any chat
+
+Copy [`PM.md`](./PM.md) into your first message and add:
+"Follow these principles for all future responses in this thread."
+
+## Cursor Support
+
+This repository includes a committed Cursor rule:
+- [`.cursor/rules/karpathy-guidelines.mdc`](./.cursor/rules/karpathy-guidelines.mdc) for source-compatible naming
+- [`.cursor/rules/pragmatic-pm-guidelines.mdc`](./.cursor/rules/pragmatic-pm-guidelines.mdc) for project naming
+
+See [`CURSOR.md`](./CURSOR.md) for setup and portability instructions.
+
+## Repository Structure
+
+```text
+.
+├── .claude-plugin/
+│   ├── marketplace.json
+│   └── plugin.json
+├── .cursor/rules/
+│   ├── karpathy-guidelines.mdc
+│   └── pragmatic-pm-guidelines.mdc
+├── skills/pragmatic-pm-guidelines/
+│   └── SKILL.md
+├── skills/karpathy-guidelines/
+│   └── SKILL.md
+├── CLAUDE.md
+├── CURSOR.md
+├── EXAMPLES.md
+├── PM.md
+└── README.md
+```
 
 ## License
+
 MIT

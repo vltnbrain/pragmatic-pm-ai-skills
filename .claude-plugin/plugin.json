@@ -1,0 +1,18 @@
+﻿{
+    "name":  "pragmatic-pm-ai-skills",
+    "description":  "Pragmatic behavioral guidelines for PM, IT, and career-focused AI workflows",
+    "version":  "1.0.0",
+    "author":  {
+                   "name":  "vltnbrain"
+               },
+    "license":  "MIT",
+    "keywords":  [
+                     "product-management",
+                     "career",
+                     "guidelines",
+                     "pragmatic"
+                 ],
+    "skills":  [
+                   "./skills/karpathy-guidelines"
+               ]
+}

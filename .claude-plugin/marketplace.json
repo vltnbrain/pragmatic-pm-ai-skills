@@ -1,0 +1,29 @@
+﻿{
+  "name": "pragmatic-pm-skills",
+  "id": "pragmatic-pm-skills",
+  "owner": {
+    "name": "vltnbrain"
+  },
+  "metadata": {
+    "description": "Pragmatic AI guidelines for product and career execution",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pragmatic-pm-ai-skills",
+      "source": "./",
+      "description": "Incentive-first, low-friction, evidence-based PM and career guidance for AI assistants",
+      "version": "1.0.0",
+      "author": {
+        "name": "vltnbrain"
+      },
+      "keywords": [
+        "product-management",
+        "career",
+        "guidelines",
+        "pragmatic"
+      ],
+      "category": "workflow"
+    }
+  ]
+}
