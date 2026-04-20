@@ -25,6 +25,8 @@
 - [`CLAUDE.md`](./CLAUDE.md)
 - [`skills/karpathy-guidelines/SKILL.md`](./skills/karpathy-guidelines/SKILL.md)
 - [`EXAMPLES.md`](./EXAMPLES.md)
+- [`BENCHMARK.md`](./BENCHMARK.md)
+- [`CHANGELOG.md`](./CHANGELOG.md)
 
 ## 安装
 

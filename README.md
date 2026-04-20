@@ -24,6 +24,9 @@ The core content is in:
 - [`CLAUDE.md`](./CLAUDE.md) for project-level instruction files.
 - [`skills/karpathy-guidelines/SKILL.md`](./skills/karpathy-guidelines/SKILL.md) for plugin compatibility with the source layout.
 - [`skills/pragmatic-pm-guidelines/SKILL.md`](./skills/pragmatic-pm-guidelines/SKILL.md) as a project-named variant.
+- [`EXAMPLES.md`](./EXAMPLES.md) for bad vs pragmatic scenario patterns.
+- [`BENCHMARK.md`](./BENCHMARK.md) for before/after outcome measurement.
+- [`CHANGELOG.md`](./CHANGELOG.md) for release history.
 
 English | [简体中文](./README.zh.md)
 
@@ -79,7 +82,9 @@ See [`CURSOR.md`](./CURSOR.md) for setup and portability instructions.
 ├── skills/karpathy-guidelines/
 │   └── SKILL.md
 ├── CLAUDE.md
+├── CHANGELOG.md
 ├── CURSOR.md
+├── BENCHMARK.md
 ├── EXAMPLES.md
 ├── PM.md
 └── README.md
